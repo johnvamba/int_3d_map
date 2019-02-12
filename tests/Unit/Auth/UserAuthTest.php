@@ -15,14 +15,24 @@ class UserAuthTest extends TestCase
      *
      * @return void
      */
-    public function testUser()
+    // public function testUser()
+    // {
+    //     $user = factory(User::class)->create();
+
+    //     $response = $this->actingAs($user)
+    //                      ->withSession(['foo' => 'bar'])
+    //                      ->get('/');
+
+    //     $response->assertStatus(200);
+    // }
+
+    public function testUserCanVisitFrontPage()
     {
-        $user = factory(User::class)->create();
+    	
+    }
 
-        $response = $this->actingAs($user)
-                         ->withSession(['foo' => 'bar'])
-                         ->get('/');
+    public function testUserCanVisitBackPage()
+    {
 
-        $response->assertStatus(200);
     }
 }

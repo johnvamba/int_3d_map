@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('front.site');
 
 Route::group([
 		'prefix' => 'admin',
