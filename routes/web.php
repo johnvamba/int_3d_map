@@ -32,3 +32,6 @@ Route::group([
 			return view('welcome');
 		})->name('admin.something');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
