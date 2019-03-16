@@ -17,15 +17,5 @@ class Structure extends Model
      */
     protected $dates = ['deleted_at'];
 
-    protected $fillable = [
-    	'name',
-    	'keyname',
-    	'description',
-    	'height',
-    	'roofcolor',
-     	'area',
-    	'wallcolor',
-    	'image',
-    	'polygon'
-    ];
+    protected $guarded = [];
 }
